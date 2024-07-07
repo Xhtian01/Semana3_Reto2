@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tienda Muebles</title>
   </head>
   <body>
     <header>
       <h1>Tienda <span>Muebles</span></h1>
       <nav>
-        <ul>
+        <ul class="container-fixed">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotro.html">Nosotros</a></li>
           <li><a href="tienda.html">Tienda</a></li>
@@ -19,45 +20,45 @@
         </ul>
       </nav>
     </header>
-    <div><img src="./img/principal.jpg" alt="imagen" /></div>
+    <div class="container-img"><img src="./img/principal.jpg" alt="imagen" /></div>
     <main>
-      <section>
-        <h2>Categoría de Productos</h2>
-        <div>
-          <div>
+      <section class="category container-fixed">
+        <h2 class="section-header">Categorías de Productos</h2>
+        <div class="category-products">
+          <div class="product">
             <img src="./img/categoria1.jpg" alt="imagen" />
-            <p>Oficina</p>
+            <a href="#">Oficina</a>
           </div>
-          <div>
+          <div class="product">
             <img src="./img/categoria2.jpg" alt="imagen" />
-            <p>Hogar</p>
+            <a href="#">Hogar</a>
           </div>
-          <div>
+          <div class="product">
             <img src="./img/categoria3.jpg" alt="imagen" />
-            <p>Cocina</p>
+            <a href="#">Cocina</a>
           </div>
         </div>
       </section>
-      <section>
+      <section class="about">
         <div>
           <img src="./img/nosotros.jpg" alt="imagen" />
         </div>
-        <div>
+        <div class="about-txt">
           <h2>Sobre Nosotros</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatum fugiat numquam sunt error, odit
-            nostrum sed adipisci minima ipsum labore asperiores. Assumenda delectus necessitatibus iusto, dolore vel
-            quod blanditiis!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Vitae, voluptatum fugiat numquam sunt error, odit nostrum <br />sed adipisci minima ipsum labore asperiores.
+            Assumenda <br />delectus necessitatibus iusto, dolore vel quod blanditiis!
           </p>
         </div>
       </section>
-      <section>
-        <h2>Nuestro Productos</h2>
-        <article>
-          <div>
+      <section class="ourProducts container-fixed">
+        <h2 class="section-header">Nuestro Productos</h2>
+        <article class="productFirstR">
+          <div class="product1-img">
             <img src="./img/producto1.jpg" alt="producto1" />
           </div>
-          <div>
+          <div class="productFirstR-txt">
             <header>
               <h3>Producto 1</h3>
             </header>
@@ -66,103 +67,121 @@
             <button>AGREGAR AL CARRITO</button>
           </div>
         </article>
-        <article>
-          <div>
-            <img src="./img/producto2.jpg" alt="producto2" />
-          </div>
-          <div>
-            <header>
-              <h3>Producto 2</h3>
-            </header>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p>$1,000,000.00</p>
-            <button>AGREGAR AL CARRITO</button>
-          </div>
-        </article>
-        <article>
-          <div>
-            <img src="./img/producto3.jpg" alt="producto3" />
-          </div>
-          <div>
-            <header>
-              <h3>Producto 3</h3>
-            </header>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p>$1,000,000.00</p>
-            <button>AGREGAR AL CARRITO</button>
-          </div>
-        </article>
-        <article>
-          <div>
-            <img src="./img/producto4.jpg" alt="producto4" />
-          </div>
-          <div>
-            <header>
-              <h3>Producto 4</h3>
-            </header>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p>$1,000,000.00</p>
-            <button>AGREGAR AL CARRITO</button>
-          </div>
-        </article>
-        <article>
-          <div>
-            <img src="./img/producto5.jpg" alt="producto5" />
-          </div>
-          <div>
-            <header>
-              <h3>Producto 5</h3>
-            </header>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p>$1,000,000.00</p>
-            <button>AGREGAR AL CARRITO</button>
-          </div>
-        </article>
-        <article>
-          <div>
-            <img src="./img/producto6.jpg" alt="producto6" />
-          </div>
-          <div>
-            <header>
-              <h3>Producto 6</h3>
-            </header>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p>$1,000,000.00</p>
-            <button>AGREGAR AL CARRITO</button>
-          </div>
-        </article>
+        <div class="productSecondR">
+          <article>
+            <div class="product2-img">
+              <img src="./img/producto2.jpg" alt="producto2" />
+            </div>
+            <div class="productSecondR-txt">
+              <header>
+                <h3>Producto 2</h3>
+              </header>
+              <p>
+                Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.
+              </p>
+              <p>$1,000,000.00</p>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+          </article>
+          <article>
+            <div class="product2-img">
+              <img src="./img/producto3.jpg" alt="producto3" />
+            </div>
+            <div class="productSecondR-txt">
+              <header>
+                <h3>Producto 3</h3>
+              </header>
+              <p>
+                Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.
+              </p>
+              <p>$1,000,000.00</p>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+          </article>
+        </div>
+        <div class="productThirdR">
+          <article>
+            <div>
+              <img src="./img/producto4.jpg" alt="producto4" />
+            </div>
+            <div class="productThirdR-txt">
+              <header>
+                <h3>Producto 4</h3>
+              </header>
+              <p>
+                Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.
+              </p>
+              <p>$1,000,000.00</p>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img src="./img/producto5.jpg" alt="producto5" />
+            </div>
+            <div class="productThirdR-txt">
+              <header>
+                <h3>Producto 5</h3>
+              </header>
+              <p>
+                Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.
+              </p>
+              <p>$1,000,000.00</p>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img src="./img/producto6.jpg" alt="producto6" />
+            </div>
+            <div class="productThirdR-txt">
+              <header>
+                <h3>Producto 6</h3>
+              </header>
+              <p>
+                Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.
+              </p>
+              <p>$1,000,000.00</p>
+              <button>AGREGAR AL CARRITO</button>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
-      <section>
-        <h3>Categorías</h3>
-        <ul>
-          <li><a href="#">Cocina</a></li>
-          <li><a href="#">Oficina</a></li>
-          <li><a href="#">Jardin</a></li>
-          <li><a href="#">Cochera</a></li>
-          <li><a href="#">Dormitorio</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Sobre Nosotros</h3>
-        <ul>
-          <li><a href="#">Nuestra Historia</a></li>
-          <li><a href="#">Misión, visión, Valores</a></li>
-          <li><a href="#">Carreras</a></li>
-          <li><a href="#">Politica de Privacidad</a></li>
-          <li><a href="#">Términos del Servicio</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Categorías</h3>
-        <ul>
-          <li><a href="#">Preguntas Frecuentes</a></li>
-          <li><a href="#">Ayuda en línea</a></li>
-          <li><a href="#">Confianza y Seguridad</a></li>
-        </ul>
-      </section>
-      <div><p>Todos los derechos Reservados, TiendaMuebles</p></div>
+      <div class="container-fixed container-footer">
+        <section>
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#">Cocina</a></li>
+            <li><a href="#">Oficina</a></li>
+            <li><a href="#">Jardin</a></li>
+            <li><a href="#">Cochera</a></li>
+            <li><a href="#">Dormitorio</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Sobre Nosotros</h3>
+          <ul>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">Misión, visión, Valores</a></li>
+            <li><a href="#">Carreras</a></li>
+            <li><a href="#">Politica de Privacidad</a></li>
+            <li><a href="#">Términos del Servicio</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Soporte</h3>
+          <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Ayuda en línea</a></li>
+            <li><a href="#">Confianza y Seguridad</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright">
+        <p>Todos los derechos Reservados, TiendaMuebles</p>
+      </div>
     </footer>
   </body>
 </html>

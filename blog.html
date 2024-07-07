@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tiendas Muebles</title>
   </head>
   <body>
     <header>
       <h1>Tienda <span>Muebles</span></h1>
       <nav>
-        <ul>
+        <ul class="container-fixed">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotro.html">Nosotros</a></li>
           <li><a href="tienda.html">Tienda</a></li>
@@ -19,64 +20,76 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>Nuestro Blog</h2>
-      <div>
+    <main class="container-fixed">
+      <h2 class="section-header header-blog">Nuestro Blog</h2>
+      <div class="container-blog">
         <section>
           <article>
-            <header><h2>Guía de Colores</h2></header>
-            <div><img src="./img/nosotros.jpg" alt="imagen" /></div>
+            <header>
+              <h2 class="section-header blog-article">Guía de Colores</h2>
+            </header>
             <div>
-              <div>
-                <p>Fecha: <span>22 de Octubre de 2022</span></p>
-              </div>
-              <div>
-                <p>Escrito por: <span>TiendaMuebles</span></p>
-              </div>
+              <img src="./img/nosotros.jpg" alt="imagen" />
             </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi
-                eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi quas
-                numquam nam.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium
-                possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam
-                voluptatem numquam? In, nobis!
-              </p>
+            <div class="container-detalle">
+              <div class="blog-info">
+                <div class="info-detalle">
+                  <p>Fecha: <span>22 de Octubre de 2022</span></p>
+                </div>
+                <div class="info-detalle">
+                  <p>Escrito por: <span>TiendaMuebles</span></p>
+                </div>
+              </div>
+              <div class="blog-txt">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi
+                  eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi
+                  quas numquam nam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium
+                  possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam
+                  voluptatem numquam? In, nobis!
+                </p>
+              </div>
+              <button>LEER</button>
             </div>
-            <button>LEER</button>
           </article>
           <article>
-            <header><h2>Guía de Colores</h2></header>
-            <div><img src="./img/nosotros.jpg" alt="imagen" /></div>
+            <header>
+              <h2 class="section-header blog-article">Guía de Colores</h2>
+            </header>
             <div>
-              <div>
-                <p>Fecha: <span>22 de Octubre de 2022</span></p>
-              </div>
-              <div>
-                <p>Escrito por: <span>TiendaMuebles</span></p>
-              </div>
+              <img src="./img/nosotros.jpg" alt="imagen" />
             </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi
-                eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi quas
-                numquam nam.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium
-                possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam
-                voluptatem numquam? In, nobis!
-              </p>
+            <div class="container-detalle">
+              <div class="blog-info">
+                <div class="info-detalle">
+                  <p>Fecha: <span>22 de Octubre de 2022</span></p>
+                </div>
+                <div class="info-detalle">
+                  <p>Escrito por: <span>TiendaMuebles</span></p>
+                </div>
+              </div>
+              <div class="blog-txt">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi
+                  eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi
+                  quas numquam nam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium
+                  possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam
+                  voluptatem numquam? In, nobis!
+                </p>
+              </div>
+              <button>LEER</button>
             </div>
-            <button>LEER</button>
           </article>
         </section>
         <aside>
           <h3>Otras Entradas de Blog</h3>
-          <div>
+          <div class="aside-links">
             <ul>
               <li><a href="#">Guía de Colores</a></li>
               <li><a href="#">Nuevos Modelos</a></li>
@@ -88,35 +101,39 @@
       </div>
     </main>
     <footer>
-      <section>
-        <h3>Categorías</h3>
-        <ul>
-          <li><a href="#">Cocina</a></li>
-          <li><a href="#">Oficina</a></li>
-          <li><a href="#">Jardin</a></li>
-          <li><a href="#">Cochera</a></li>
-          <li><a href="#">Dormitorio</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Sobre Nosotros</h3>
-        <ul>
-          <li><a href="#">Nuestra Historia</a></li>
-          <li><a href="#">Misión, visión, Valores</a></li>
-          <li><a href="#">Carreras</a></li>
-          <li><a href="#">Politica de Privacidad</a></li>
-          <li><a href="#">Términos del Servicio</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Categorías</h3>
-        <ul>
-          <li><a href="#">Preguntas Frecuentes</a></li>
-          <li><a href="#">Ayuda en línea</a></li>
-          <li><a href="#">Confianza y Seguridad</a></li>
-        </ul>
-      </section>
-      <div><p>Todos los derechos Reservados, TiendaMuebles</p></div>
+      <div class="container-fixed container-footer">
+        <section>
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#">Cocina</a></li>
+            <li><a href="#">Oficina</a></li>
+            <li><a href="#">Jardin</a></li>
+            <li><a href="#">Cochera</a></li>
+            <li><a href="#">Dormitorio</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Sobre Nosotros</h3>
+          <ul>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">Misión, visión, Valores</a></li>
+            <li><a href="#">Carreras</a></li>
+            <li><a href="#">Politica de Privacidad</a></li>
+            <li><a href="#">Términos del Servicio</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Soporte</h3>
+          <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Ayuda en línea</a></li>
+            <li><a href="#">Confianza y Seguridad</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright">
+        <p>Todos los derechos Reservados, TiendaMuebles</p>
+      </div>
     </footer>
   </body>
 </html>
